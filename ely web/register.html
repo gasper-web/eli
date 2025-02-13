@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="register.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts.js" defer></script>
+  </head>
+  <body>
+
+
+    <!-- Registration Form -->
+    <section id="registration" class="registration">
+      <h1 style="color: #333;">REGISTER</h1>
+      <form id="registration-form">
+        <!-- Full Name -->
+        <div class="form-group">
+          <label for="full-name">Full Name</label>
+          <input
+            type="text"
+            id="full-name"
+            name="full-name"
+            placeholder="Enter your full name"
+            required
+          />
+          <small class="error-message"
+            >Please enter a valid full name (e.g., Young Marvel).</small
+          >
+        </div>
+
+        <!-- Registration Number -->
+        <div class="form-group">
+          <label for="reg-number">Registration Number</label>
+          <input
+            type="text"
+            id="reg-number"
+            name="reg-number"
+            placeholder="BCS-00-0000-0000"
+            required
+          />
+          <small class="error-message"
+            >Please enter a valid registration number (e.g.,
+            BCS-00-1234-5678).</small
+          >
+        </div>
+
+        <!-- Sex -->
+        <div class="form-group">
+          <label for="sex">Sex</label>
+          <select id="sex" name="sex" required>
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+          <small class="error-message">Please select your gender.</small>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+          <small class="error-message"
+            >Please enter a valid email address (e.g.,
+            example@domain.com).</small
+          >
+        </div>
+
+        <!-- Region -->
+        <div class="form-group">
+          <label for="region">Region</label>
+          <select id="region" name="region" required>
+            <option value="">Select Region</option>
+            <option value="Arusha">Arusha</option>
+            <option value="Dar es Salaam">Dar es Salaam</option>
+            <option value="Dodoma">Dodoma</option>
+            <option value="Kigoma">Kigoma</option>
+            <option value="Kilimanjaro">Kilimanjaro</option>
+            <option value="Mara">Mara</option>
+            <option value="Mbeya">Mbeya</option>
+            <option value="Mwanza">Mwanza</option>
+          </select>
+          <small class="error-message">Please select a region.</small>
+        </div>
+
+        <!-- District -->
+        <div class="form-group">
+          <label for="district">District</label>
+          <select id="district" name="district" required>
+            <option value="">Select District</option>
+          </select>
+          <small class="error-message">Please select a district.</small>
+        </div>
+
+        <!-- Password -->
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your password"
+            required
+          />
+          <small class="error-message"
+            >Password must be at least 8 characters long and include a special
+            character.</small
+          >
+        </div>
+
+        <!-- Confirm Password -->
+        <div class="form-group">
+          <label for="confirm-password">Confirm Password</label>
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+            placeholder="Confirm your password"
+            required
+          />
+          <small class="error-message">Passwords do not match.</small>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn">Register</button>
+      </form>
+    </section>
+
+    <footer>
+    </footer>
+  </body>
+</html>

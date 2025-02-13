@@ -1,0 +1,34 @@
+.cartegories{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cartegories-head{
+    text-align: center;
+    font-size: 40px;
+}
+
+.cartegory{
+    text-align: center;
+    margin-top: 60px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.cartegory img{
+    height: 400px;
+    width: 400px;
+    /* border-radius: 10px; */
+}
+
+.cartegory h3{
+    font-size: 30px;
+}
+
+.cartegory h3:hover{
+    color: rgb(58, 58, 200);
+    text-decoration: underline;
+    cursor: pointer;
+}
